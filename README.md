@@ -12,15 +12,15 @@ Tensorflow Demo
 `git clone https://github.com/tensorflow/models.git`
 
 ## set the models path as environment variables
-`cd models/research/`
+`cd models/research/`<br>
 `export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/slim`
 
 ## running the script
-You can run the script in two modes
-    * Camera mode
-    `python my-object-detection.py -d 1 -o 1 -w 20 -q-size 150`
-    * Input video file mode
-    `python my-object-detection.py -d 1 -o 1 -i traffic.mp4 -w 20 -q-size 150`
-    (input video files `e.g. traffic.mp4` should be available inside `inputs` folder)
+You can run the script in two modes <br>
+* **Camera mode** <br>
+`python my-object-detection.py -d 1 -o 1 -w 20 -q-size 150`
+* **Input video file mode** <br>
+`python my-object-detection.py -d 1 -o 1 -i traffic.mp4 -w 20 -q-size 150`
+(input video files `e.g. traffic.mp4` should be available inside `inputs` folder) <br>
 
 After running the script you will get the output as a videos file containing the input video and identified objects inside `outputs` folder
