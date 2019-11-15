@@ -11,8 +11,17 @@ Tensorflow Demo
 ## install tensorflow training models (inside or outside the current project)
 `git clone https://github.com/tensorflow/models.git`
 
+### update following files
+* models/research/object-detection/utils/label_map_util.py
+    * line 138 `with tf.gfile.GFile(path, 'r') as fid:` to `with tf.io.gfile.GFile(path, 'r') as fid:`
+
+## install and setup protoc
+`sudo apt-get install protobuf-compiler python-pil python-lxml python-tk` <br>
+`cd models/research/` <br>
+`protoc object_detection/protos/*.proto --python_out=.`
+
 ## set the models path as environment variables
-`cd models/research/`<br>
+`cd models/research/` <br>
 `export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/slim`
 
 ## running the script

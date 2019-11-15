@@ -1,4 +1,3 @@
-from __future__ import print_function
 from function.realtime import *
 from function.video import *
 import argparse

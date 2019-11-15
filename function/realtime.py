@@ -83,4 +83,3 @@ def realtime(args):
     if args["output"]:
         out.release()
     cv2.destroyAllWindows()
-

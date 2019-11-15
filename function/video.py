@@ -110,4 +110,3 @@ def video(args):
     if args["output"]:
         out.release()
     cv2.destroyAllWindows()
-    
