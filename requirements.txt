@@ -6,7 +6,7 @@ async-timeout==3.0.1
 attrs==19.3.0
 autovizwidget==0.13.1
 backcall==0.1.0
-bleach==3.1.0
+bleach==3.1.4
 cachetools==3.1.1
 certifi==2019.9.11
 chardet==3.0.4
